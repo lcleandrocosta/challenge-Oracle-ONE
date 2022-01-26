@@ -1,0 +1,144 @@
+body {
+    background-color: #1A181A;
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;;
+}
+
+#header {
+    border-color: rgb(53, 50, 205);
+    border-radius: 10px;
+    border-style: solid;
+    background-color: #1A181A;
+    font-family: EucliBold;
+    font-size: larger;
+    height: 80px;
+    margin-top: 0%;
+    padding: 1px;
+    width: auto;
+    
+}
+
+#header > h1 {
+    color: white;
+    text-align: center;
+    margin: 15px;
+}
+
+main {
+    border-color: rgb(53, 50, 205);
+    border-radius: 10px;
+    border-style: solid;
+    align-items: center;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    position: auto;
+    box-shadow: 
+    0 0 0 5px rgba(9, 1, 112, 0.9);
+}
+
+main > section label {
+    color: yellow;
+    font-size: 22px;
+    margin-left: 13px;
+    position: relative;
+}
+
+.multi-bordas-input {
+    background-color: #1A181A;
+    border-color: rgb(53, 50, 205);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    font-size: 30px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    position: relative;
+    width: 350px;
+    box-shadow: 
+      0 0 0 5px rgba(9, 1, 112, 0.9);
+      
+}
+
+input:focus, textarea {
+    outline: 0;
+}
+
+button {
+    background-color: rgb(0, 81, 255);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: EucliBold;
+    font-size: 22px;
+    height: 50px;
+    margin-left: 33px;
+    margin-top: 20px;
+    width: 150px;
+    transition: all 0.5s linear;
+}
+
+button:hover{
+   background-color: blue;
+}
+
+textarea {
+    background-color: #1A181A;
+    border-color: rgb(53, 50, 205);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    font-size: 20px;
+    height: 200px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 400px;
+    box-shadow: 
+      0 0 0 5px rgba(9, 1, 112, 0.9);
+}
+
+h2{
+    color: white;
+    margin-top: 50px; 
+    margin-left: 20px;  
+}
+
+.container-inp {
+    border: rgb(53, 50, 205);
+    border-radius: 10px;
+    border-style: solid;
+    height: 200px;
+    position: relative;
+    justify-content: center;
+}
+
+footer {
+    border-color: rgb(53, 50, 205);
+    border-radius: 10px;
+    border-style: solid;
+    color: white;
+    text-align: center;
+    width: auto;
+    box-shadow: 
+      0 0 0 5px rgba(9, 1, 112, 0.9);
+}
+
+@keyframes piscar {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0; }
+}
+
+.piscar {
+    -webkit-animation: piscar .75s linear infinite;
+   -moz-animation: piscar .75s linear infinite;
+   -ms-animation: piscar .75s linear infinite;
+   -o-animation: piscar .75s linear infinite;
+   animation: piscar .75s linear infinite;
+}
