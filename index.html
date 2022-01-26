@@ -5,19 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decodificador on line</title>
+    <title>Codificador e Decodificador on line</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <section>
-            <label>Digite o texto</label>
-            <input type="text">
-            <button>Criptografar</button>
-            <button>Descriptografar</button>
-            <label>Saída de texto</label>
-            <input type="text">
+
+    <div id="header">
+        <h1><marquee behavior="alternate">Codificador e Decodificador OnLine</marquee></h1>
+    </div>
+
+    <main class="main">
+
+        <section class="form-box">
+
+            <label class="piscar" for="descricao">Texto somente em minúsculo e sem acento!</label>
+
+            <div>
+                <div class="container-inp">
+                    <div>
+                        <input class="multi-bordas-input" id="input-text" type="text" placeholder="Insira o texto aqui">                   
+                    </div>
+                    <div>
+                        <button id="cript">Criptografar</button>
+                        <button class="btn-descript" id="descript">Descriptografar</button>
+                    </div>
+                </div>
+                <div>
+                    <h2>Mensagem codificada/descodificada</h2>
+                    <textarea name="texto" id="saida" cols="30" rows="10" placeholder="Saída do texto codificado/decodificado"></textarea>
+                </div>
+            </div>
+            
         </section>
+
     </main>
-    <footer>Leandro Costa - Sempre em busca de conhecimento</footer>
+
+    <footer>Desenvolvido por Leandro Costa</footer>
+    
 </body>
 </html>
