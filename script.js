@@ -3,6 +3,7 @@ const texto = document.querySelector('#input-text');
 const saidaTexto = document.querySelector('#saida');
 const botaoCript = document.querySelector('#cript');
 const botaoDecript = document.querySelector('#descript');
+const botaoCopia = document.querySelector('#btn-copia');
 
 //Função para codificar texto de entrada
 function codificar(texto) {
@@ -35,6 +36,8 @@ function mostrarDecritografia(){
    texto.focus();
    return;
 }
+
+
 
 //Acionar eventos de click nos botões, quando clicados
 botaoCript.addEventListener('click', mostrarCriptografia);
