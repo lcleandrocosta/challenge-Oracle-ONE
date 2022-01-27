@@ -86,6 +86,11 @@ button:hover{
    background-color: blue;
 }
 
+#btn-copia {
+    margin: 0;
+    margin-left: 140px;
+}
+
 textarea {
     background-color: #1A181A;
     border-color: rgb(53, 50, 205);
@@ -94,7 +99,7 @@ textarea {
     border-width: 2px;
     color: white;
     font-size: 20px;
-    height: 200px;
+    height: 100px;
     margin-top: 0px;
     margin-bottom: 20px;
     position: relative;
@@ -116,6 +121,8 @@ h2{
     height: 200px;
     position: relative;
     justify-content: center;
+    box-shadow: 
+      0 0 0 5px rgba(9, 1, 112, 0.9);
 }
 
 footer {
