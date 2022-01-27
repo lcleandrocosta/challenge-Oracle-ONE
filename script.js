@@ -5,16 +5,17 @@ const botaoCript = document.querySelector('#cript');
 const botaoDecript = document.querySelector('#descript');
 const botaoCopia = document.querySelector('#btn-copia');
 
+
 //Função para codificar texto de entrada
 function codificar(texto) {
    return texto.replace(/u/g, "ufat").replace(/e/g, "enter").replace(/i/g, "imes").replace(/o/g, "ober").replace(/a/g, "ai");
-  
+
 }
 
 //Função para decodificação
-function descodificar(texto) {
+function decodificar(texto) {
    return texto.replace(/ai/g, "a").replace(/enter/g, "e").replace(/imes/g, "i").replace(/ober/g, "o").replace(/ufat/g, "u");
-  
+
 }
 
 //Função para chamar a função de codificação e tratar campos
@@ -24,21 +25,26 @@ function mostrarCriptografia(){
    saidaTexto.innerHTML = textoCript;
    texto.value = " ";
    texto.focus();
-   return;
 }
 
 //Função para chamar a função de decodificação e tratar campos
 function mostrarDecritografia(){
    var textoInput = texto.value;
-   var textoDecript = codificar(textoInput);
+   var textoDecript = decodificar(textoInput);
    saidaTexto.innerHTML = textoDecript;
    texto.value = " ";
    texto.focus();
-   return;
 }
 
-
+//Função copia para a área de transferência
+function copiar(){
+   saidaTexto.select();
+   document.execCommand('copy');
+   alert("Copiado");
+   texto.focus();
+}
 
 //Acionar eventos de click nos botões, quando clicados
 botaoCript.addEventListener('click', mostrarCriptografia);
 botaoDecript.addEventListener('click', mostrarDecritografia);
+botaoCopia.addEventListener('click', copiar);
