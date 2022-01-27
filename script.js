@@ -1,6 +1,6 @@
 //Declaração e atribuição de variáveis
-const t = document.querySelector('#input-text');
-const st = document.querySelector('#saida');
+const texto = document.querySelector('#input-text');
+const saidaTexto = document.querySelector('#saida');
 const botaoCript = document.querySelector('#cript');
 const botaoDecript = document.querySelector('#descript');
 
@@ -17,25 +17,25 @@ function descodificar(texto) {
 }
 
 //Função para chamar a função de codificação e tratar campos
-function mostrarCrp(){
-   var te = t.value;
-   var tc = codificar(te);
-   st.innerHTML = tc;
-   t.value = " ";
-   t.focus();
+function mostrarCriptografia(){
+   var textoInput = texto.value;
+   var textoCript = codificar(textoInput);
+   saidaTexto.innerHTML = textoCript;
+   texto.value = " ";
+   texto.focus();
    return;
 }
 
 //Função para chamar a função de decodificação e tratar campos
-function mostrarDescrp(){
-   var te = t.value;
-   var tc = descodificar(te);
-   st.innerHTML = tc;
-   t.value = " ";
-   t.focus();
+function mostrarDecritografia(){
+   var textoInput = texto.value;
+   var textoDecript = codificar(textoInput);
+   saidaTexto.innerHTML = textoDecript;
+   texto.value = " ";
+   texto.focus();
    return;
 }
 
 //Acionar eventos de click nos botões, quando clicados
-botaoCript.addEventListener('click', mostrarCrp);
-botaoDecript.addEventListener('click', mostrarDescrp);
+botaoCript.addEventListener('click', mostrarCriptografia);
+botaoDecript.addEventListener('click', mostrarDecritografia);
