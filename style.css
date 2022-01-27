@@ -41,7 +41,7 @@ main {
 main > section label {
     color: yellow;
     font-size: 22px;
-    margin-left: 13px;
+    margin-left: 5px;
     position: relative;
 }
 
